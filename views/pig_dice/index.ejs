@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="/pig_dice/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Pig Game</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" class="animate__hinge" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" class="animate__hinge" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            
+            <button class="btn-new"><i class="ion-ios-game-controller-b-outline"></i>New Game</button>
+            
+
+                <button class="btn-rules" type="button" onclick="location.href='http://localhost:4000/projects/pig_dice/rules'"><i class="ion-ios-lightbulb-outline"></i>Game Rules</button> 
+
+            <button class="btn-roll" class="animate__flash"><i class="ion-ios-flame-outline"></i>Roll Dice</button>
+            <button class="btn-hold"><i class="ion-ios-filing-outline"></i>Hold</button>
+            <div class="settings">
+                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ion-ios-cog-outline"></i>Game Settings</button>
+                <div class="dropdown-menu">
+                    <h6 class="dropdown-header">Number of Dice</h6>
+                    <a class="dropdown-item active" href="#">One</a>
+                    <a class="dropdown-item disabled" href="#">Two (Coming Soon!)</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Change Winning Score</h6>
+                        <form class="px-4 py-3">
+                            <div class="form-group">
+                            <input type="number" class="form-control" id="new-score-input" placeholder="New Score">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+                </div>
+            </div>
+           <!-- <button class="btn-score" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ion-ios-color-wand-outline"></i>Change Goal
+                <form class = "change-game">
+                <div class = "new-score-form"  action="" onsubmit="submitDestruction">
+                    <input type="number" class="new-score" id = "new-score-input" placeholder = "New Scoring Goal"/>
+                    <input type="submit" style="display: none"/>
+                </div>
+                </form>
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div role="separator" class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+
+            </button>  -->
+            
+            
+
+            
+            
+            
+            <img src="/pig_dice/img/dice-5.png" alt="Dice" class="dice">
+        </div>
+        
+        <script src="/pig_dice/js/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                            
+    </body>
+</html>
