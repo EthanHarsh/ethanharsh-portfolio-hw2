@@ -3,14 +3,14 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 const express = require('express');
-const bcrypt = require('bcrypt');
-const passport = require('passport');
+
 
 //const authRoutes = require('./routes/authRoutes')
 const projectRoutes = require('./routes/projectRoutes');
 //const APIRoutes = require('./routes/APIRoutes');
 
 const app = express();
+
 //view engine
 app.set('view-engine', 'ejs');
 
