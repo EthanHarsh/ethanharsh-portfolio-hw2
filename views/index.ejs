@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="main/portfolio/cards.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <header>
@@ -18,40 +19,23 @@
         </nav>
     </header>
 
-    <div class="flexbox-wrap main-content">
-        <div class="coming_soon card">
-            <img class="in-card-img" src="/img/exciting.jpg" alt="Coming Soon Graphic">
-            <div class="flexbox-wrap-col card-text">
-                <h2>You wont believe what is coming!</h2>
-                <div class="underline-fade"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet volutpat arcu. Nunc facilisis mollis dapibus. Quisque non viverra ipsum. Cras malesuada justo in sem mattis laoreet. </p>
-            </div>
-        </div>
+    <main>
+        <section class="flexbox-wrap main-content">
+            <% projects.forEach(project => { %>
+                <div class="card">
+                    <div class="display-box">
+                          <img src="https://rb.gy/uacttu" alt="card-img">
+                    </div>
+                    <div class="info-box">
+                      <h3><%= project.name %></h3>
+                      <p><%= project.description %></p>
+                    </div>
+                    <button>More Info</button>
+                  </div>  
+           <% }); %>
+        </section>
+    </main>
 
-        <form class="contact-me card flexbox-wrap-col" id="contact-me">
-            <div class="card-text">
-                <h2>Sign up now!</h2>
-                <div class="underline-fade"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet volutpat arcu. Nunc facilisis mollis dapibus. Quisque non viverra ipsum. Cras malesuada justo in sem mattis laoreet.</p>
-            </div>
-            <div class="flexbox-wrap-col card-text">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input class="form-control" type="name" id="name" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input class="form-control" type="email" id="email" name="email" placeholder="example@example.com" required>
-                </div>
-                <div class="form-group">
-                    <button class="btn btn-primary w-25" type="submit">Send</button>
-                </div>
-            </div>
-        </form>
-    </div>
-    <div class="flexbox-wrap main-content">
-        <p id="on-background">The nav stays in place! 😁</p>
-    </div>
     <footer>
         <div class="copyright">
             &copy; 2021 Ethan Harsh. All rights reserved.

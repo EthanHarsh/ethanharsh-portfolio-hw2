@@ -97,7 +97,7 @@ input {
 
 .flexbox-wrap {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -111,7 +111,6 @@ input {
 
 .main-content {
     width: 100vw;
-    height: 95vh;
 }
 
 .card {
