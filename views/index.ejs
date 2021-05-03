@@ -20,11 +20,29 @@
     </header>
 
     <main>
+        <section class="landing">
+            <div class="feature-box">
+                <div class="feature-box-img">
+                    <img src="/img/profile.jpg">
+                </div>
+                <div class="feature-box-headline">
+                    <h1 class="hero-text">Hello, my name is Ethan</h1>
+                    <h2 class="hero-text">I like Mac & Cheese</h2>
+                    <h2 class="hero-text">Techno &</h2>
+                    <h2 class="hero-text">Coding</h2>
+                </div>
+
+                <div class="feature-box-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate nobis eaque totam excepturi quia ipsa assumenda saepe. Laborum, adipisci reiciendis cum alias earum ipsa repellat quod nam eligendi itaque aliquid!</p>
+                </div>
+
+            </div>
+        </section>
         <section class="flexbox-wrap main-content">
             <% projects.forEach(project => { %>
                 <div class="card">
                     <div class="display-box">
-                          <img src="https://rb.gy/uacttu" alt="card-img">
+                          <img src="img/code.jpg" alt="card-img">
                     </div>
                     <div class="info-box">
                       <h3><%= project.name %></h3>
