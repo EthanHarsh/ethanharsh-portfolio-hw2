@@ -9,6 +9,7 @@
 
     --border-med: #424242; /* Gray 800 */
 
+    --border-light: #616161; /* Light Blue 800 */
     --border-secondary-dark: #01579B; /* Light Blue 800 */
 
     --btn-background-primary: #29B6F6; /* Light Blue 400 */
@@ -138,15 +139,15 @@ button:hover {
 
 .copyright {
     margin-top: auto;
-    color: var(text-color-dark);
+    color: var(--text-color-dark);
     text-align: center;
     margin-bottom: 1rem;
 }
 
 .feature-box {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: column wrap;
+    align-items: flex-start;
     background: var(--background-secondary-dark);
     border: 1px solid var(--border-secondary-dark);
     box-shadow: 3px 3px 5px -1px #000000;
@@ -155,20 +156,35 @@ button:hover {
     margin: var(--main-side-margin);
 }
 
+.feature-box-top {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
 .feature-box-img {
     width: 25%;
 }
 
 .hero-text {
-    text-align: left;
-    font-size: 3rem;
+    text-align: right;
+    font-size: 2rem;
 }
 
-.feature-box-text{
+.feature-box-text {
     width: 75%;
     overflow: hidden;
-    padding: 1rem;
     border-left: 1px solid var(--text-color-main);
+    margin-bottom: 0.5rem;
+}
+
+.right {
+    border-left: none;
+    border-right: 1px solid var(--text-color-main);
+    text-align: right;
+    width: 100%;
 }
 
 #on-background {
