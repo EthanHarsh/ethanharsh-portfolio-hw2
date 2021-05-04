@@ -5,12 +5,16 @@
     --background-light: #757575; /* Gray 600 */
     --background-nav: #9E9E9E; /* Gray 500 */
 
-    --background-secondary-dark: #0277BD; /* Light Blue 700 */
+    --background-secondary-dark: #0277BD; /* Light Blue 800 */
+
+    --background-third-dark: #CE0F3D; /* OSU Scarlett */
+    --background-fourth-dark: #558B2F; /* Light Green 800 */
 
     --border-med: #424242; /* Gray 800 */
 
     --border-light: #616161; /* Light Blue 800 */
     --border-secondary-dark: #01579B; /* Light Blue 800 */
+    --border-third-dark: rgb(173, 42, 2); /* Light Blue 800 */
 
     --btn-background-primary: #29B6F6; /* Light Blue 400 */
     --btn-background-border-primary: #03A9F4; /* Light Blue 500 */
@@ -53,6 +57,11 @@ nav {
     z-index: 999;
 }
 
+.nav-holder {
+    height: 7vh;
+    width: 100%;
+}
+
 a {
     text-decoration: none;
     color: var(--text-color-main);
@@ -73,7 +82,6 @@ img {
 }
 
 p {
-    color: var(--text-color-main);
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
@@ -93,7 +101,12 @@ main {
     width: 100vw;
 }
 
-button {
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
     background: var(--btn-background-primary);
     border: 1px solid var(--btn-background-border-primary);
     width: 200px;
@@ -104,24 +117,36 @@ button {
     padding: 0.5rem;
 }
 
-button:hover {
+.button:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    align-items: center;
     background: var(--btn-background-hover-primary);
     border: 1px solid var(--btn-background-hover-border-primary);
   }
 
-.landing img {
-    width: 100vw;
+.card:hover .button:first-child {
+    margin-bottom: 0.5rem;
 }
 
-.feature-box {
+
+.repo {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.card:hover .repo {
     display: flex;
-    flex-flow: row wrap;
-    padding-top: 7vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.feature-box img {
-    max-width: 250px;
-}
 
 .flexbox-wrap {
     display: flex;
@@ -139,7 +164,6 @@ button:hover {
 
 .copyright {
     margin-top: auto;
-    color: var(--text-color-dark);
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -154,6 +178,11 @@ button:hover {
     padding-left: var(--main-side-margin);
     padding-right: var(--main-side-margin);
     margin: var(--main-side-margin);
+    padding-top: 7vh;
+    padding-bottom: 1rem;
+}
+.feature-box img {
+    max-width: 250px;
 }
 
 .feature-box-top {
@@ -170,14 +199,18 @@ button:hover {
 
 .hero-text {
     text-align: right;
-    font-size: 2rem;
+    font-size: 2rem;   
 }
 
 .feature-box-text {
     width: 75%;
     overflow: hidden;
     border-left: 1px solid var(--text-color-main);
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.feature-box-text p {
+    color: var(--text-color-main);
 }
 
 .right {
@@ -187,14 +220,37 @@ button:hover {
     width: 100%;
 }
 
-#on-background {
-    color: var(text-color-dark);
+.education {
+    background: var(--background-third-dark);
+    border: 1px var(--border-third-dark);
+    padding-top: 2.5rem;
 }
 
-#portfolio {
-    cursor:not-allowed;
+.education img {
+    padding-right: 2.5rem;
 }
 
-#portfolio:hover {
-    color: #E64A19;
+.port {
+    background: var(--background-fourth-dark);
+    padding-top: 1.5rem;
 }
+
+.portfolio {
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.right-text {
+    text-align: left;
+}
+
+.card:first-child:hover .info-box h3 {
+    font-size: 1.5rem;
+}
+
+.card:first-child:hover .button {
+    
+    height: 125px
+}
+

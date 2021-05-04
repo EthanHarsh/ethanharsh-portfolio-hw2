@@ -16,7 +16,7 @@ const projectSchema = new mongoose.Schema({
     keywords: Array,
     url: String,
     repo: String,
-    createdAt: Date,
+    heroimg: String,
     storageTime: {
         type: Date,
         required: true,
