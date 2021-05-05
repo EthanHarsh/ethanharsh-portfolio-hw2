@@ -91,6 +91,8 @@ h2 {
     text-align: center;
 }
 
+
+
 main {
     width: 100vw;
 }
@@ -153,6 +155,7 @@ main {
 }
 .feature-box img {
     max-width: 250px;
+    border-radius: 4px;
 }
 
 .feature-box-top {
