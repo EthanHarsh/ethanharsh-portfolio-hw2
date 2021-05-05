@@ -108,6 +108,7 @@ main {
     margin-right: 1rem;
     margin-bottom: 0.5rem;
     padding: 0.5rem;
+    border-radius: 4px;
 }
 
 .button:hover {
@@ -118,6 +119,7 @@ main {
     align-items: center;
     background: var(--btn-background-hover-primary);
     border: 1px solid var(--btn-background-hover-border-primary);
+    border-radius: 4px;
   }
 
 .flexbox-wrap {
@@ -146,6 +148,7 @@ main {
     margin: var(--main-side-margin);
     padding-top: 7vh;
     padding-bottom: 1rem;
+    border-radius: 4px;
 }
 .feature-box img {
     max-width: 250px;
@@ -169,6 +172,7 @@ main {
     overflow: hidden;
     border-left: 1px solid var(--text-color-main);
     margin-bottom: 2rem;
+    border-radius: 4px;
 }
 
 .feature-box-text p {
@@ -213,7 +217,7 @@ main {
 
 
 .copyright {
-    margin-top: auto;
+    margin-top: 1rem;
     text-align: center;
     margin-bottom: 1rem;
     color: var(--text-color-dark);
