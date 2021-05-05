@@ -127,27 +127,6 @@ main {
     border: 1px solid var(--btn-background-hover-border-primary);
   }
 
-.card:hover .button:first-child {
-    margin-bottom: 0.5rem;
-}
-
-
-.repo {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
-}
-
-.card:hover .repo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
 .flexbox-wrap {
     display: flex;
     flex-flow: row wrap;
@@ -160,12 +139,6 @@ main {
     flex-flow: column;
     align-items: flex-start;
     justify-content: space-evenly;
-}
-
-.copyright {
-    margin-top: auto;
-    text-align: center;
-    margin-bottom: 1rem;
 }
 
 .feature-box {
@@ -245,12 +218,8 @@ main {
     text-align: left;
 }
 
-.card:first-child:hover .info-box h3 {
-    font-size: 1.5rem;
+.copyright {
+    margin-top: auto;
+    text-align: center;
+    margin-bottom: 1rem;
 }
-
-.card:first-child:hover .button {
-    
-    height: 125px
-}
-

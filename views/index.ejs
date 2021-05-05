@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="main/portfolio/cards.css">
+    <link rel="stylesheet" href="main/portfolio/portfolio.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300&display=swap" rel="stylesheet">
     <title>Portfolio</title>
@@ -84,10 +85,7 @@
         <section class="flexbox-wrap main-content">
             <% var project1 = projects[0].heroimg %>
             <% projects.forEach(project => { %>
-                <% var imageURL = project.heroimg %>
-                <% console.log(project.name) %>
-                <% console.log(imageURL) %>
-                <div class="card">
+                <div class="card <%= project.slug %>">
                     <style>
                         .card:first-child {
                             height: 300px;

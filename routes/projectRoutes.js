@@ -6,7 +6,7 @@ router
     .get((req, res) => res.render('forkify/index.ejs'));
 
 router
-    .route('pig_dice')
+    .route('/pig_dice')
     .get((req, res) => res.render('pig_dice/index.ejs'));
 
 router

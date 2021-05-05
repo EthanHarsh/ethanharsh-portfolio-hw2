@@ -1,0 +1,32 @@
+.about-me:hover {
+    background-image: url(/img/about_me.png);
+}
+
+.budgety:hover {
+    background-image: url(/img/budgety.png);
+}
+
+.pig-dice:hover {
+    background-image: url(/img/pig_dice.png);
+}
+
+.forkify:hover {
+    background-image: url(/img/forkify.png);
+}
+
+.simple-node-blog:hover {
+    background-image: url(/img/code.jpg);
+}
+
+.boilerplate-node-authorization:hover {
+    background-image: url(/img/code.jpg);
+}
+
+.osu-bootcamp-unit-1-mini-project:hover {
+    background-image: url(/img/coming_soon_port.png);
+}
+
+.html-git-css-homework-01:hover {
+    background-image: url(/img/hw1.png);
+}
+
