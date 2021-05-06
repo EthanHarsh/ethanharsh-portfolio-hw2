@@ -53,7 +53,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     background-color: var(--background-nav);
-    box-shadow: 3px 3px 7px 0px #000000;
+    box-shadow: 20px 20px 12px 0px #000000;
     z-index: 999;
 }
 
@@ -145,7 +145,7 @@ main {
     align-items: flex-start;
     background: var(--background-secondary-dark);
     border: 1px solid var(--border-secondary-dark);
-    box-shadow: 3px 3px 5px -1px #000000;
+    box-shadow: 20px 20px 12px -1px #000000;
     padding-left: var(--main-side-margin);
     padding-right: var(--main-side-margin);
     margin: var(--main-side-margin);
