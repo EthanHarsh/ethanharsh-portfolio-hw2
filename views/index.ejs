@@ -25,7 +25,7 @@
     <main>
         <section class="landing">
             <div class="feature-box">
-                <div class="feature-box-top">
+                <figure class="feature-box-top">
                     <img src="/img/profile.jpg">
                     <div class="feature-box-headline">
                         <h1 class="hero-text">Hello, my name is Ethan.</h1>
@@ -33,7 +33,7 @@
                         <h2 class="hero-text" id="desktop">Techno, &</h2>
                         <h2 class="hero-text" id="desktop">Coding.</h2>
                     </div>
-                </div>
+                </figure>
 
                 <div class="feature-box-text">
                     <p>Thank you for checking out my developer portfolio! Here you will find a short bio about me and my publically shared development projects. I hope you enjoy looking thorugh them.  Feel free to email me (by clicking on the contact button) if you have any comments, suggestions, or questions.  I will be constantly updating this site so be sure to return soon! 😁</p>
@@ -46,7 +46,7 @@
         </section>
 
         <section class="landing">
-            <div class="feature-box education">
+            <figure class="feature-box education">
                 <div class="feature-box-top">
                     <img src="/img/osu-seal.jpg" id="mobile">
                     <div class="feature-box-headline ">
@@ -65,7 +65,7 @@
                 <div class="feature-box-text right">
                     <p>I decided to sign up for OSU's full stack development bootcamp for a couple reasons.  You can learn alot through UDEMY courses and online tutorials, but you will inevitably have gaps in your knowledge.  For me the bootcamp has helped me to understand industry best practices, a number of advanced skills, and connected me with other developers around the country.</p>
                 </div>
-            </div>
+            </figure>
         </section>
 
         <section class="landing" id="portfolio">
@@ -92,9 +92,9 @@
                             justify-content: space-between;
                         }
                     </style>
-                    <div class="display-box">
+                    <figure class="display-box">
                           <img src="<%= project.heroimg %>" alt="card-img">
-                    </div>
+                    </figure>
                     <div class="info-box">
                       <h3><strong><%= project.name %></strong></h3>
                       <p id="hover-hide"><%= project.description %></p>
