@@ -83,8 +83,11 @@ p {
 h1,
 h2 {
     color: var(--text-color-main);
-    padding: 0;
-    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 h2 {
@@ -95,6 +98,20 @@ h2 {
 
 main {
     width: 100vw;
+}
+
+.fourohfour {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourohfour img {
+    width: 100%;
+    height: 100%;
+
 }
 
 .button {
@@ -223,7 +240,7 @@ main {
 .copyright {
     margin-top: 1rem;
     text-align: center;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
     color: var(--text-color-dark);
 }
 
@@ -240,6 +257,10 @@ main {
     font-size: 1rem;
     margin-top: 0.5rem;
     text-align: center;
+}
+
+#hover-hide {
+    margin-bottom: 0.5rem;
 }
 
 
@@ -263,6 +284,10 @@ main {
 
     #projects {
         margin-bottom: 0.5rem;
+    }
+
+    .card:hover #hover-hide {
+        display: none;
     }
 
  }

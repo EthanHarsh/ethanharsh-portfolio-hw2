@@ -29,4 +29,7 @@ app.get('/', async (req, res) =>{
 //app.use(authRoutes);
 app.use('/projects', projectRoutes);
 //app.use('/api/v1', APIRoutes);
+app.use((req, res, next) => {
+    res.render('404.ejs');
+})
 module.exports = app;
