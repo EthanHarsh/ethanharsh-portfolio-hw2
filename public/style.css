@@ -190,7 +190,7 @@ main {
 
 .feature-box-text {
     width: 75%;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     padding-right: 9%;
     overflow: hidden;
     border-left: 1px solid var(--text-color-main);
