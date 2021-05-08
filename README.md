@@ -6,16 +6,16 @@ This project was initially started before the bootcamp began.  I initially focus
 ## Description
 I needed a portfolio to display my development work.  I decided to build the portfolio using Node.js, Express, & EJS for a number of reasons.  First, Node.JS allows me to easily host and route to many projects.  EJS templates also allow for easy display of project information pulled from a database.  Finally, Node's flexibility allows additional features and content to be added in the future.
 
-Templates wanted:
-- Login landing page
-- Login page
-- Login form
-- Register page
-- Register form
-- Basic user name storage function
-- Basic password storage function [(secure)](https://www.bigomega.dev/passwords-in-node)
-- Basic authentication function
-- Routing
+Project Goals:
+- Display Name
+- Display Photo
+- Provide Professional Links
+- Display Projects
+- Display Project Screenshot
+- Display Project Name
+- Display Project Description
+- List Project Deployment Link
+- List Project GitHub Repo Link
 ## Skills Learned
 - [HTML/CSS](https://www.w3.org/standards/webdesign/htmlcss)
 - [EJS](https://ejs.co/)
@@ -28,5 +28,5 @@ Templates wanted:
 ## Resources
 - [Node.js Documentation](https://nodejs.org/en/docs/)
 - [Express](https://expressjs.com/)
-- **Design ->** [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- **Design ->** [Material.io](https://material.io/)
 - **General Reference ->** [MDN](https://developer.mozilla.org/en-US/)
