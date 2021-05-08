@@ -190,6 +190,8 @@ main {
 
 .feature-box-text {
     width: 75%;
+    margin-top: 0.5rem;
+    padding-right: 9%;
     overflow: hidden;
     border-left: 1px solid var(--text-color-main);
     margin-bottom: 2rem;
@@ -205,6 +207,8 @@ main {
     border-right: 1px solid var(--text-color-main);
     text-align: right;
     width: 100%;
+    padding-left: 9%;
+    padding-right: 0%;
 }
 
 .education {
