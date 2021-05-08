@@ -273,6 +273,10 @@ main {
     .feature-box-top {
         justify-content: center;
     }
+    
+    .feature-box-text {
+        padding-right: 0;
+    }
 
     .hero-text {
         text-align: center;
