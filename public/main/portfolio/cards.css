@@ -170,10 +170,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   display: none;
 }
 
-.card:first-child:hover .info-box p {
-  display: block;
-}
-
 .card:first-child:hover .info-box h3 {
   font-size: 1.5rem;
 }
